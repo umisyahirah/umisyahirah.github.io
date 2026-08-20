@@ -1,9 +1,16 @@
 ---
-title: "Hello"
 layout: post
-categories: introduction
+title: "My First Post"
+date: 2026-08-21
+categories: [research, mathematics]
 ---
 
-## Header goes here
+# My First Post
 
-My name is Umi Syahirah!
+This is my first Jekyll post.
+
+I am using Jekyll to create my academic website and document my research.
+
+## My Research
+
+My research focuses on mathematical modelling, dynamical systems, and bifurcation analysis.
