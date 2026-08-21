@@ -11,3 +11,10 @@ $highlight: #f08 !default
   @if $a and $b
     @return light-dark(light($a), light($b))
   @return hsl(230deg, 18%, $a + 0%)
+
+// Paste this at the very end of your utils.sass file
+body, html, p, span, li, article, section
+  font-family: "EB Garamond", serif !important
+
+h1, h2, h3, h4, h5, h6, a
+  font-family: "EB Garamond", serif !important
