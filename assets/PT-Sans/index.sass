@@ -69,10 +69,14 @@
 //   src: local('PT Sans Bold'), local('PTSans-Bold'), url('bold-latin.woff2') format('woff2')
 //   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 
-// Apply EB Garamond everywhere EXCEPT MathJax containers and elements
-body, html, p, span:not([class*="mjx"]):not([id*="MathJax"]), li, article, section, h1, h2, h3, h4, h5, h6, a
+// Apply EB Garamond everywhere EXCEPT MathJax, code blocks, and inline code elements
+body, html, p, span:not([class*="mjx"]):not([id*="MathJax"]):not(.highlight), li, article, section, h1, h2, h3, h4, h5, h6, a
   font-family: "EB Garamond", serif !important
 
-// Ensure MathJax containers explicitly retain their mathematical styling
+// Safety shield: Force MathJax elements to keep their default mathematical styling
 .MathJax, .MathJax_Display, mjx-container, math
   font-family: inherit !important
+
+// Safety shield: Force inline code, code block wrapper divs, and text components to stay monospaced
+code, pre, kbd, samp, .highlight, .highlight pre, .highlight code
+  font-family: "Courier New", Courier, monospace !important
