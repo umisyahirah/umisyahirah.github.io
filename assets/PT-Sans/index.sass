@@ -69,13 +69,24 @@
 //   src: local('PT Sans Bold'), local('PTSans-Bold'), url('bold-latin.woff2') format('woff2')
 //   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 
-// Target ONLY regular text content elements, bypassing code tags and math wrappers completely
-body, p, li, article, section, h1, h2, h3, h4, h5, h6, a, blockquote
-  font-family: "EB Garamond", serif !important
+// // Target ONLY regular text content elements, bypassing code tags and math wrappers completely
+// body, p, li, article, section, h1, h2, h3, h4, h5, h6, a, blockquote
+//   font-family: "EB Garamond", serif !important
 
-// Force block code containers, inline snippets, and MathJax blocks back to their strict system defaults
-code, pre, kbd, samp, .highlight, .highlight *, .MathJax, .MathJax *, mjx-container, math, math *
-  font-family: monospace !important
+// // Force block code containers, inline snippets, and MathJax blocks back to their strict system defaults
+// code, pre, kbd, samp, .highlight, .highlight *, .MathJax, .MathJax *, mjx-container, math, math *
+//   font-family: monospace !important
+
+// // 2. Strict insulation layer: Ensure MathJax vectors and Code components stay untouched
+// .MathJax, .MathJax_Display, mjx-container, math, code, pre, .highlight, .highlight *
+//   font-family: monospace, initial !important
+
+// 1. Assign EB Garamond across regular text channels cleanly using native variables
+:root
+  --font-family: "EB Garamond", serif
+
+body
+  font-family: var(--font-family)
 
 // 2. Strict insulation layer: Ensure MathJax vectors and Code components stay untouched
 .MathJax, .MathJax_Display, mjx-container, math, code, pre, .highlight, .highlight *
