@@ -77,6 +77,6 @@ body, p, li, article, section, h1, h2, h3, h4, h5, h6, a, blockquote
 code, pre, kbd, samp, .highlight, .highlight *, .MathJax, .MathJax *, mjx-container, math, math *
   font-family: monospace !important
 
-// 2. Strict layout insulation block: Protect KaTeX math and Monospace code
-.katex, .katex *, .katex-display, .katex-display *, code, pre, .highlight, .highlight *
-  font-family: monospace, initial !important
+// 2. Clear out EB Garamond from raw math strings and code tags completely
+code, pre, .highlight, script[type="math/tex"], script[type="math/tex; mode=display"]
+  font-family: "Courier New", Courier, monospace !important
