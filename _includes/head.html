@@ -5,6 +5,30 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<button id="theme-toggle" type="button" aria-label="Toggle theme">
+  Toggle Mode
+</button>
+
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  // Read saved preference from local storage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    root.style.colorScheme = savedTheme;
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const currentScheme = getComputedStyle(root).colorScheme;
+    const newScheme = currentScheme.includes('dark') ? 'light' : 'dark';
+    root.style.colorScheme = newScheme;
+    localStorage.setItem('theme', newScheme);
+  });
+</script>
+
+
 {%- if site.show_minimal -%}
 <link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
 {%- elsif site.show_frame -%}
