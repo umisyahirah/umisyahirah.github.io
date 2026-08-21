@@ -77,9 +77,19 @@ body, p, li, article, section, h1, h2, h3, h4, h5, h6, a, blockquote
 code, pre, kbd, samp, .highlight, .highlight *, .MathJax, .MathJax *, mjx-container, math, math *
   font-family: monospace !important
 
-// 2. Strict insulation layer: Ensure MathJax vectors and Code components stay untouched
-.MathJax, .MathJax_Display, mjx-container, math, code, pre, .highlight, .highlight *
-  font-family: monospace, initial !important
+/* Force KaTeX to use its native math fonts */
+.katex, 
+.katex-display, 
+.katex * {
+    font-family: KaTeX_Main, KaTeX_Math, serif !important;
+}
+
+
+
+  
+// // 2. Strict insulation layer: Ensure MathJax vectors and Code components stay untouched
+// .MathJax, .MathJax_Display, mjx-container, math, code, pre, .highlight, .highlight *
+//   font-family: monospace, initial !important
 
 // // 1. Target standard user-facing text layout blocks safely
 // body, p, li, article, section, h1, h2, h3, h4, h5, h6, a, blockquote, main
