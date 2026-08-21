@@ -88,7 +88,7 @@
 body
   font-family: var(--font-family)
 
-// 2. Strict insulation layer: Ensure MathJax vectors and Code components stay untouched
-.MathJax, .MathJax_Display, mjx-container, math, code, pre, .highlight, .highlight *
+// 2. Ironclad block level isolation rule for Jekyll/Kramdown math processors
+script[type^="math/tex"], div.kdmath, span.kdmath, .MathJax, .MathJax *, mjx-container, math, math *
   font-family: monospace, initial !important
 
