@@ -31,7 +31,7 @@ $$ \frac{\mathrm{d}y}{\mathrm{d}t} \hspace{5mm} \text{and} \hspace{5mm} \frac{dy
 ## Part 2: The First Notice
 It is not _obvious_ at first. The first realization is when I played the [**TeXnique**](https://texnique.xyz). 
 
-![TexNique](images/TexNique.png)
+![TexNique](../assets/images/TexNique.png)
 
 Briefly, TeXnique is a LaTeX Typsetting game where you have to write the LaTeX code from given equation. After you coded the given equation correctly, new equation will appear. The equations ranges from easy to hard, and the scores depends on the difficulty of the equations; if the equationis lengthy and complex, high score is given, and vice versa. 
 
