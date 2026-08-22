@@ -14,3 +14,5 @@ Random, but here is Koblitz curve secp256k1 equation:
 $$ y^2 = x^3 + 7 $$
 
 defined over a finite field. 
+
+That's all!
