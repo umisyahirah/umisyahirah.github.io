@@ -35,7 +35,7 @@ Let us begin with a _motivation_:
 
 _Remark:_ Why the need to restrict on the interval $$[0,\pi/2]$$? Consider we are interested on finding exactly one more intersection at the suspected interval, we might as well (ab)use some theorems from Analysis. 
 
-_Proof_ .  Suppose that the $u_1(x)$ and $u_2(x)$ are continuous in the interval of $$[0,\pi/2]$$ , and are sufficiently differentiable in $$(0,\pi/2)$$. Additionally, it is given that:
+_Proof_ .  Suppose that the $$u_1(x)$$ and $$u_2(x)$$ are continuous in the interval of $$[0,\pi/2]$$ , and are sufficiently differentiable in $$(0,\pi/2)$$. Additionally, it is given that:
 
 $$
 \begin{aligned}
