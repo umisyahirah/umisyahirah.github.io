@@ -10,14 +10,13 @@ During my PhD year, I was a part-time Additional Mathematics tutor during my fre
 ### Part 1: That one question in my mind
 The question is from the Trigonometric Ratios topic.
 
-> Consider two equations:
->$$
->\begin{align}
->u_1(x) &= \cos (x) \tag{1} \\
->u_2(x) &= 1 - \frac{x}{2\pi} \tag{2}
->\end{align}
->$$
->that are defined within the interval of $0<x<2\pi$. Sketch the two equations in the same graph and determine the number of intersections between the Equations (1) and (2).
+>Consider two equations:
+>
+>$$ \begin{align} u_1(x) &= \cos (x)   \\ 
+u_2(x) &= 1 - \frac{x}{2\pi} 
+\end{align} $$
+>
+>that are defined within the interval of $0<x<2\pi$. Sketch the two equations in the same graph and determine the number of intersections between the $u_1(x)$ and $u_2(x)$.
 
 When my student first **sketched** the solutions, he said that there was only _one_ intersection between the two equations.  (Here, the keyword is _sketch_ because it was supposed to be a rough drawing).  Below shows a drawing by me, a depiction how it was drawn by my student last time:
 
@@ -37,6 +36,7 @@ Let us begin with a _motivation_:
 _Remark:_ Why the need to restrict on the interval $[0,\pi/2]$? Consider we are interested on finding exactly one more intersection at the suspected interval, we might as well (ab)use some theorems from Analysis. 
 
 _Proof_ .  Suppose that the $u_1(x)$ and $u_2(x)$ are continuous in the interval of $[0,\pi/2]$ , and are sufficiently differentiable in $(0,\pi/2)$. Additionally, it is given that:
+
 $$
 \begin{align}
 u_1(0)&=u_2(0)=1, \\
@@ -44,31 +44,44 @@ u_1(\pi)&<0, \,\, u_2(\pi)>0,\\
 u_1'(0)&=0,
 \end{align}
 $$
+
 and 
+
 $$ u_1''(x)<0, \,\,\,\,\,u_2'(x)=-c,$$
 for all $x$ in the interval of $[0,\pi/2]$, where $c$ is a positive constant. We define a function of $f(x)$ such that:
-$$ f(x)=u_1(x)-u_2(x) \tag{1}$$
+$$ f(x)=u_1(x)-u_2(x)$$
+
 From the Definition (1), it can be shown that at the endpoints of the interval:
+
 $$
 \begin{align}
 f(0)=0  \hspace{5mm} \text{and}  \hspace{5mm} f(\pi/2)<0.
 \end{align}
 $$
+
 Differentiate (1) with respect to $x$:
-$$ f'(x)=u_1'(x)-u_2'(x), \tag{2}$$
+
+$$ f'(x)=u_1'(x)-u_2'(x), $$
+
 and at $x=0$, 
+
 $$
 \begin{align}
 f'(0)&=u_1'(0)-u'_2(0),\\
 &= 0-(-c)\\
-f'(0)&=c \tag{3} \\
+f'(0)&=c  \\
 &>0.
 \end{align}
 $$
+
 Since $f'(0)>0$, then there exist $k \in [0,\pi/2]$ such that $f(k)>f(0) \Longrightarrow f(k)>0$ . Thus, there exist positive $f$ in the interval of $[0,\pi/2]$. Then, with $f(k)>0$ and $f(\pi/2)<0$ (alternating sign), we can use Intermediate Value Theorem (IVT) that shows that there exists at least one $p \in [0,\pi/2]$  such that  
+
 $$f(p) = 0.$$
+
 Consider $f''(x)$ is strictly concave, then we can assert that there is only one $p \in [0,\pi/2]$. Ultimately, 
+
 $$ u_1(p)=u_2(p)$$
+
 which means there exist an intersection between $u_1(x)$ and $u_2(x)$ in the interval of $[0,\pi/2]$.      $\square$
 
 ## Part 3: Closing remark
@@ -77,4 +90,4 @@ The intention of the initial proof is to prevent from differentiating the functi
 
 So does Analysis. _Sike!_
 
-Nonetheless, I definitely enjoyed writing out the proof. It felt like a quick trip back to my third year days, reminiscing all the "_for all $\varepsilon>0$, there exists $\delta$_" in my analysis homework. _Till then!_
+Nonetheless, I definitely enjoyed writing out the proof. It felt like a quick trip back to my third year days, reminiscing all the "_for all_ $\varepsilon>0$, _there exists_ $\delta$" in my analysis homework. _Till then!_
