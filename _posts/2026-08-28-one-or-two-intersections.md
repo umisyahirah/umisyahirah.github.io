@@ -16,7 +16,7 @@ The question is from the Trigonometric Ratios topic.
 u_2(x) &= 1 - \frac{x}{2\pi} 
 \end{aligned} $$
 >
->that are defined within the interval of $0<x<2\pi$. Sketch the two equations in the same graph and determine the number of intersections between the $u_1(x)$ and $u_2(x)$.
+>that are defined within the interval of $$0<x<2\pi$$. Sketch the two equations in the same graph and determine the number of intersections between the $$u_1(x)$$ and $$u_2(x)$$.
 
 When my student first **sketched** the solutions, he said that there was only _one_ intersection between the two equations.  (Here, the keyword is _sketch_ because it was supposed to be a rough drawing).  Below shows a drawing by me, a depiction how it was drawn by my student last time:
 
@@ -24,18 +24,18 @@ When my student first **sketched** the solutions, he said that there was only _o
 
 Often, the sketching process for linear equation uses the approach of determining the intercepts and the endpoints  and connect all of them to form a straight line. And, that was what my student did.
 
-However, my not-so spidey sense informed me that there was supposed to be one more intersection in the vicinity of the $x=0$. So, to be sure, my student and I checked through [Desmos](https://www.desmos.com/calculator) , and we found that there was indeed another intersection at $(x,y)=\left(0.32106,\ 0.9489\right)$ .
+However, my not-so spidey sense informed me that there was supposed to be one more intersection in the vicinity of the $$x=0$$. So, to be sure, my student and I checked through [Desmos](https://www.desmos.com/calculator) , and we found that there was indeed another intersection at $$(x,y)=\left(0.32106,\ 0.9489\right)$$ .
 
 ![desmos](../assets/images/desmos.png)
 
 ### Part 2: A tidbit of Analysis _recap_?
 
 Let us begin with a _motivation_:
-> (Informal) Motivation: To prove there is indeed an intersection point at the interval of $[0,\pi/2]$
+> (Informal) Motivation: To prove there is indeed an intersection point at the interval of $$[0,\pi/2]$$.
 
-_Remark:_ Why the need to restrict on the interval $[0,\pi/2]$? Consider we are interested on finding exactly one more intersection at the suspected interval, we might as well (ab)use some theorems from Analysis. 
+_Remark:_ Why the need to restrict on the interval $$[0,\pi/2]$$? Consider we are interested on finding exactly one more intersection at the suspected interval, we might as well (ab)use some theorems from Analysis. 
 
-_Proof_ .  Suppose that the $u_1(x)$ and $u_2(x)$ are continuous in the interval of $[0,\pi/2]$ , and are sufficiently differentiable in $(0,\pi/2)$. Additionally, it is given that:
+_Proof_ .  Suppose that the $u_1(x)$ and $u_2(x)$ are continuous in the interval of $$[0,\pi/2]$$ , and are sufficiently differentiable in $$(0,\pi/2)$$. Additionally, it is given that:
 
 $$
 \begin{aligned}
@@ -48,7 +48,9 @@ $$
 and 
 
 $$ u_1''(x)<0, \,\,\,\,\,u_2'(x)=-c,$$
-for all $x$ in the interval of $[0,\pi/2]$, where $c$ is a positive constant. We define a function of $f(x)$ such that:
+
+for all $$x$$ in the interval of $$[0,\pi/2]$$, where $$c$$ is a positive constant. We define a function of $f(x)$ such that:
+
 $$ f(x)=u_1(x)-u_2(x)$$
 
 From the Definition (1), it can be shown that at the endpoints of the interval:
@@ -72,15 +74,15 @@ f'(0)&=c  \\
 \end{aligned}
 $$
 
-Since $f'(0)>0$, then there exist $k \in [0,\pi/2]$ such that $f(k)>f(0) \Longrightarrow f(k)>0$ . Thus, there exist positive $f$ in the interval of $[0,\pi/2]$. Then, with $f(k)>0$ and $f(\pi/2)<0$ (alternating sign), we can use Intermediate Value Theorem (IVT) that shows that there exists at least one $p \in [0,\pi/2]$  such that  
+Since $$f'(0)>0$$, then there exist $$k \in [0,\pi/2]$$ such that $$f(k)>f(0) \Longrightarrow f(k)>0$$ . Thus, there exist positive $f$ in the interval of $$[0,\pi/2]$$. Then, with $$f(k)>0$$ and $$f(\pi/2)<0$$ (alternating sign), we can use Intermediate Value Theorem (IVT) that shows that there exists at least one $$p \in [0,\pi/2]$$  such that  
 
 $$f(p) = 0.$$
 
-Consider $f''(x)$ is strictly concave, then we can assert that there is only one $p \in [0,\pi/2]$. Ultimately, 
+Consider $$f''(x)$$ is strictly concave, then we can assert that there is only one $$p \in [0,\pi/2]$$. Ultimately, 
 
 $$ u_1(p)=u_2(p)$$
 
-which means there exist an intersection between $u_1(x)$ and $u_2(x)$ in the interval of $[0,\pi/2]$.      $\square$
+which means there exist an intersection between $$u_1(x)$$ and $$u_2(x)$$ in the interval of $$[0,\pi/2]$$.      $$\square$$
 
 ## Part 3: Closing remark
 
