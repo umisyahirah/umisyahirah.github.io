@@ -12,9 +12,9 @@ The question is from the Trigonometric Ratios topic.
 
 >Consider two equations:
 >
->$$ \begin{align} u_1(x) &= \cos (x)   \\ 
+>$$ \begin{align*} u_1(x) &= \cos (x)   \\ 
 u_2(x) &= 1 - \frac{x}{2\pi} 
-\end{align} $$
+\end{align*} $$
 >
 >that are defined within the interval of $0<x<2\pi$. Sketch the two equations in the same graph and determine the number of intersections between the $u_1(x)$ and $u_2(x)$.
 
@@ -38,11 +38,11 @@ _Remark:_ Why the need to restrict on the interval $[0,\pi/2]$? Consider we are 
 _Proof_ .  Suppose that the $u_1(x)$ and $u_2(x)$ are continuous in the interval of $[0,\pi/2]$ , and are sufficiently differentiable in $(0,\pi/2)$. Additionally, it is given that:
 
 $$
-\begin{align}
+\begin{align*}
 u_1(0)&=u_2(0)=1, \\
 u_1(\pi)&<0, \,\, u_2(\pi)>0,\\
 u_1'(0)&=0,
-\end{align}
+\end{align*}
 $$
 
 and 
@@ -54,9 +54,7 @@ $$ f(x)=u_1(x)-u_2(x)$$
 From the Definition (1), it can be shown that at the endpoints of the interval:
 
 $$
-\begin{align}
 f(0)=0  \hspace{5mm} \text{and}  \hspace{5mm} f(\pi/2)<0.
-\end{align}
 $$
 
 Differentiate (1) with respect to $x$:
@@ -66,12 +64,12 @@ $$ f'(x)=u_1'(x)-u_2'(x), $$
 and at $x=0$, 
 
 $$
-\begin{align}
+\begin{align*}
 f'(0)&=u_1'(0)-u'_2(0),\\
 &= 0-(-c)\\
 f'(0)&=c  \\
 &>0.
-\end{align}
+\end{align*}
 $$
 
 Since $f'(0)>0$, then there exist $k \in [0,\pi/2]$ such that $f(k)>f(0) \Longrightarrow f(k)>0$ . Thus, there exist positive $f$ in the interval of $[0,\pi/2]$. Then, with $f(k)>0$ and $f(\pi/2)<0$ (alternating sign), we can use Intermediate Value Theorem (IVT) that shows that there exists at least one $p \in [0,\pi/2]$  such that  
